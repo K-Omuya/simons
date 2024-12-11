@@ -1,0 +1,89 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/faqs.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQs</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+           <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- FAQ Section -->
+<section id="faq">
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Have questions about ShopWithSimon? We’ve got answers!</p>
+
+        <div class="faq-item">
+            <button class="faq-question">How does ShopWithSimon work?</button>
+            <div class="faq-answer">
+                <p>ShopWithSimon aggregates prices from multiple e-commerce platforms to provide side-by-side comparisons, helping you find the best deals quickly and easily.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is it free to use?</button>
+            <div class="faq-answer">
+                <p>Yes, using ShopWithSimon is completely free for all users.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How accurate is the price comparison?</button>
+            <div class="faq-answer">
+                <p>We update our data frequently to ensure that the prices displayed are as accurate as possible, but we recommend verifying prices on the respective e-commerce platforms before purchase.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I track my orders?</button>
+            <div class="faq-answer">
+                <p>Yes, you can track your orders directly on ShopWithSimon by entering the Order ID in the "Track Orders" section.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What types of products can I compare?</button>
+            <div class="faq-answer">
+                <p>You can compare prices for a wide range of products, including electronics, fashion, groceries, health & beauty items, and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+
+<script>
+    // JavaScript for FAQ toggle
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.nextElementSibling.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>

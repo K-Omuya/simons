@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/shop_now.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Price Comparison</title>
+    <style>
+        /* Optional: Styling for image and name alignment */
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-info img {
+            width: 50px; /* Adjust the size of the image */
+            height: 50px;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        .product-info span {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fullscreen Carousel with Back Button -->
+    <div class="fullscreen-carousel">
+        <div class="back-btn-container">
+            <a href="categories.html" class="back-btn">&#8592; Back</a>
+        </div>
+    </div>
+
+    <!-- Price Comparison Section -->
+    <section id="price-comparison">
+        <h1>Books Price Comparison</h1>
+        <p>Compare the prices of popular books across Jumia, Kilimall, and Copia!</p>
+
+        <!-- Price Comparison Table -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Jumia (KSh)</th>
+                    <th>Kilimall (KSh)</th>
+                    <th>Copia (KSh)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 1">
+                        <span>The Power of Habit</span>
+                    </td>
+                    <td>850</td>
+                    <td>900</td>
+                    <td>880</td>
+                    <td><a href="https://www.jumia.co.ke/product-url">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 2">
+                        <span>Becoming</span>
+                    </td>
+                    <td>1,200</td>
+                    <td>1,150</td>
+                    <td>1,180</td>
+                    <td><a href="https://www.kilimall.co.ke/product-url">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 3">
+                        <span>The Subtle Art of Not Giving a F*ck</span>
+                    </td>
+                    <td>950</td>
+                    <td>1,000</td>
+                    <td>970</td>
+                    <td><a href="https://www.copia.co.ke/product-url">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 4">
+                        <span>Atomic Habits</span>
+                    </td>
+                    <td>1,100</td>
+                    <td>1,120</td>
+                    <td>1,150</td>
+                    <td><a href="https://www.jumia.co.ke/product-url">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 5">
+                        <span>Educated</span>
+                    </td>
+                    <td>1,150</td>
+                    <td>1,200</td>
+                    <td>1,180</td>
+                    <td><a href="https://www.kilimall.co.ke/product-url">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="https://via.placeholder.com/50" alt="Book 6">
+                        <span>Thinking, Fast and Slow</span>
+                    </td>
+                    <td>1,400</td>
+                    <td>1,450</td>
+                    <td>1,500</td>
+                    <td><a href="https://www.copia.co.ke/product-url">Buy</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/categories.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>categories</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Categories Section -->
+<section id="categories">
+    <div class="categories-container">
+        <h1>Select a Category</h1>
+        <p>Browse our range of commodities by selecting a category below.</p>
+
+        <!-- Category Grid -->
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="{% static 'assets/img/electronics.jpeg' %}" alt="Electronics">
+                <h3>Electronics</h3>
+                <a href="electronics.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/clothings.jpeg' %}" alt="Clothing">
+                <h3>Clothing</h3>
+                <a href="clothings.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/appliances.jpg' %}" alt="Home Appliances">
+                <h3>Home Appliances</h3>
+                <a href="home-appliances.html" class="btn">Compare Now</a>
+            </div>
+
+            <div class="category-item">
+                <img src="{% static 'assets/img/funit.jpeg' %}" alt="Furnitures">
+                <h3>Furnitures</h3>
+                <a href="furniture.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/office.jpg' %}" alt="Office Supplies">
+                <h3>Office Supplies</h3>
+                <a href="office_supplies.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/sports.png' %}" alt="Sports and Indoors">
+                <h3>Sport and Indoors</h3>
+                <a href="sports_and_indoors.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/health.jpg' %}" alt="Health and Wellness">
+                <h3>Health and Wellness</h3>
+                <a href="health_and_welness.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/books.jpeg' %}" alt="Books">
+                <h3>Books</h3>
+                <a href="books.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/grocery.jpeg' %}" alt="Groceries">
+                <h3>Groceries</h3>
+                <a href="groceries.html" class="btn">Compare Now</a>
+            </div>
+
+            <div class="category-item">
+                <img src="{% static 'assets/img/beauty.png' %}" alt="Beauty and personal care">
+                <h3>Beauty and Personal Care</h3>
+                <a href="beauty_and_personal_care.html" class="btn">Compare Now</a>
+            </div>
+            <div class="category-item">
+                <img src="{% static 'assets/img/toys.jpeg' %}" alt="Toys">
+                <h3>Toys</h3>
+                <a href="toys.html" class="btn">Compare Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

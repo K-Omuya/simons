@@ -1,0 +1,107 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/urembo.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+
+
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Section: Search and Comparison -->
+<section id="main">
+    <div class="main-container">
+        <h1>Welcome to ShopWithSimon!</h1>
+        <p>Find the best deals and compare prices across multiple platforms.</p>
+
+
+    <!-- Search Section -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter product name...">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Price Comparison Table -->
+    <table id="price-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Platform</th>
+                <th>Price</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically injected here -->
+        </tbody>
+    </table>
+
+    <script src=""></script>
+<!-- Featured Products -->
+<section id="featured-products">
+    <div class="product-container">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="{% static 'assets/img/download%20(6).jpeg' %}" alt="Lanovo X30">
+            <p>Lanovo X30</p>
+            <p>Ksh.12,550</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{% static 'assets/img/download%20(5).jpeg' %}" alt="HP Elite Book">
+            <p>HP Elite Book</p>
+            <p>Ksh.22,330</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{% static 'assets/img/download%20(3).jpeg' %}" alt="Samsung Galaxy">
+            <p>Samsung Galaxy</p>
+            <p>Ksh.15,599</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript (Optional) -->
+<script src="{% static 'assets/js/script.js' %}"></script>
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        let searchQuery = document.getElementById('search-bar').value;
+        alert('You searched for: ' + searchQuery);
+    });
+
+    document.getElementById('compare-button').addEventListener('click', function() {
+        alert('Comparing prices across platforms...');
+    });
+</script>
+
+</body>
+</html>

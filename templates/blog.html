@@ -1,0 +1,74 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/blog.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Blog Section -->
+<section id="blog">
+    <div class="blog-container">
+        <h1>Our Blog</h1>
+        <p>Stay updated with the latest shopping trends, tips, and insights from ShopWithSimon.</p>
+
+        <div class="blog-grid">
+            <article class="blog-post">
+                <img src="{% static 'assets/img/tips.png' %}" alt="Blog Post 1">
+                <h2>5 Tips for Smart Online Shopping</h2>
+                <p>Discover how to get the best deals and save money with these simple tips for online shopping.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="{% static 'assets/img/top%2010.jpeg' %}" alt="Blog Post 2">
+                <h2>Top 10 Must-Have Gadgets of 2024</h2>
+                <p>Explore the latest gadgets that are revolutionizing the tech world in 2024.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="{% static 'assets/img/track.webp' %}" alt="Blog Post 3">
+                <h2>How to Track Orders Efficiently</h2>
+                <p>Learn how ShopWithSimon makes order tracking simple and stress-free.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img src="{% static 'assets/img/compare.jpeg' %}" alt="Blog Post 4">
+                <h2>Best Categories to Compare Prices</h2>
+                <p>Find out which product categories benefit most from price comparison tools.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+</body>
+</html>

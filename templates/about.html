@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/about.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-container">
+        <h1>About ShopWithSimon</h1>
+        <p>
+            ShopWithSimon is your trusted platform for comparing prices from various e-commerce websites in Kenya.
+            We aim to simplify your shopping experience by providing a seamless and efficient way to find the best deals
+            and save both time and money.
+        </p>
+
+        <div class="about-grid">
+            <div class="about-item">
+                <h2>Our Mission</h2>
+                <p>
+                    To empower online shoppers with accurate price comparisons and help them make smarter purchasing decisions.
+                </p>
+            </div>
+
+            <div class="about-item">
+                <h2>Our Vision</h2>
+                <p>
+                    To become Kenya's leading price comparison platform, enhancing the online shopping experience for all users.
+                </p>
+            </div>
+
+            <div class="about-item">
+                <h2>Why Us?</h2>
+                <ul>
+                    <li>Reliable price comparison</li>
+                    <li>Wide variety of products</li>
+                    <li>User-friendly interface</li>
+                    <li>Quick and easy order tracking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+header {
+    background-color: #388e3c; /* Medium Green */
+    padding: 1em 2rem; /* Space around header content */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and navbar */
+    align-items: center; /* Vertically center logo and navbar */
+}
+
+/* Logo Styling */
+header .logo {
+    font-size: 2rem; /* Larger text for the logo */
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between navigation items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* White color for text */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: #d4edda; /* Light green on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and navbar vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar {
+        margin-top: 1rem; /* Add margin on top of navbar */
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Track Orders Page Specific Styles */
+.track-container {
+    padding: 2em;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.track-container h1 {
+    color: #008000;
+    margin-bottom: 1em;
+}
+
+.track-container p {
+    margin-bottom: 2em;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Order Form */
+.order-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.order-form input {
+    padding: 1em;
+    width: 60%;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.order-form button {
+    padding: 1em 2em;
+    background-color: #008000;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #7d92a8;
+}
+
+/* Order Status Section */
+.order-status {
+    margin-top: 2em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.order-status h3 {
+    color: #28a745;
+    margin-bottom: 0.5em;
+}
+
+.order-status p {
+    color: #555;
+}
+
+.order-status .error {
+    color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .track-container {
+        padding: 1em;
+    }
+
+    .order-form input {
+        width: 70%;
+    }
+
+    .order-form button {
+        width: 30%;
+    }
+}

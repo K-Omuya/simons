@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groceries - ShopWithSimon</title>
+    <link rel="stylesheet" href="{% static 'assets/css/secondhand.css' %}">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="track.html">Track Orders</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Grocery Products Section -->
+<section id="grocery">
+    <div class="grocery-container">
+        <h1>Shop for Groceries</h1>
+        <p>Fresh and affordable groceries just a click away.</p>
+
+        <!-- Grocery Grid -->
+        <div class="grocery-grid">
+            <div class="grocery-item">
+                <img src="{% static 'assets/img/rice.jpg' %}" alt="Rice">
+                <h3>Rice - 5kg</h3>
+                <p>Price: $10.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="grocery-item">
+                <img src="{% static 'assets/img/milk.jpg' %}" alt="Milk">
+                <h3>Milk - 1L</h3>
+                <p>Price: $2.50</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="grocery-item">
+                <img src="{% static 'assets/img/bread.jpg' %}" alt="Bread">
+                <h3>Bread - 500g</h3>
+                <p>Price: $1.50</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="grocery-item">
+                <img src="{% static 'assets/img/fruit.jpg' %}" alt="Fruit">
+                <h3>Mixed Fruits - 1kg</h3>
+                <p>Price: $5.00</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

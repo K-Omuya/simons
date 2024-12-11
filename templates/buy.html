@@ -1,0 +1,57 @@
+
+{% load statis %}
+<link rel="stylesheet" href="{% static 'assets/css/shop_now.css' %}">
+
+<!-- Fullscreen Carousel with Back Button -->
+<div class="fullscreen-carousel">
+    <div class="back-btn-container">
+        <a href="categories.html" class="back-btn">&#8592; Back</a>
+    </div>
+</div>
+
+<!-- Price Comparison Section -->
+<section id="price-comparison">
+    <h1>Make your order</h1>
+    <p>Select where to buy from (e.g Jumia, Kilimall, and Copia)!</p>
+
+    <!-- Price Comparison Table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Platform</th>
+                <th>Price (Ksh)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-info">
+                    <img src="https://via.placeholder.com/50" alt="Face Wash">
+                    <span>Face Wash</span>
+                </td>
+                <td>Jumia</td>
+                <td>650</td>
+                <td><a href="cart.html">Add to Cart</a></td>
+            </tr>
+            <tr>
+                <td class="product-info">
+                    <img src="https://via.placeholder.com/50" alt="Face Wash">
+                    <span>Face Wash</span>
+                </td>
+                <td>Kilimall</td>
+                <td>850</td>
+                <td><a href="cart.html">Add to Cart</a></td>
+            </tr>
+            <tr>
+                <td class="product-info">
+                    <img src="https://via.placeholder.com/50" alt="Face Wash">
+                    <span>Face Wash</span>
+                </td>
+                <td>Copia</td>
+                <td>480</td>
+                <td><a href="cart.html">Add to Cart</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>

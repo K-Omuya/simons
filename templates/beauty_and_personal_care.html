@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'assets/css/shop_now.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Personal Care Price Comparison</title>
+    <style>
+        /* Optional: Styling for image and name alignment */
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-info img {
+            width: 50px; /* Adjust the size of the image */
+            height: 50px;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        .product-info span {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fullscreen Carousel with Back Button -->
+    <div class="fullscreen-carousel">
+        <div class="back-btn-container">
+            <a href="categories.html" class="back-btn">&#8592; Back</a>
+        </div>
+    </div>
+
+    <!-- Price Comparison Section -->
+    <section id="price-comparison">
+        <h1>Beauty & Personal Care</h1>
+        <p>Compare the prices of popular beauty products across Jumia, Kilimall, and Copia!</p>
+
+        <!-- Price Comparison Table -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Jumia (KSh)</th>
+                    <th>Kilimall (KSh)</th>
+                    <th>Copia (KSh)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-info">
+                        <img src="{% static 'assets/img/face_wash.jpg' %}" alt="Face Wash">
+                        <span>Face Wash</span>
+                    </td>
+                    <td>600</td>
+                    <td>650</td>
+                    <td>620</td>
+                    <td><a href="buy.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="{% static 'assets/img/lipstick.jpg' %}" alt="Lipstick">
+                        <span>Lipstick</span>
+                    </td>
+                    <td>800</td>
+                    <td>850</td>
+                    <td>790</td>
+                    <td><a href="buy.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="{% static 'assets/img/shampoo.jpg' %}" alt="Shampoo">
+                        <span>Shampoo</span>
+                    </td>
+                    <td>500</td>
+                    <td>480</td>
+                    <td>520</td>
+                    <td><a href="buy.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="{% static 'assets/img/face_cream.jpg' %}" alt="Face Cream">
+                        <span>Face Cream</span>
+                    </td>
+                    <td>750</td>
+                    <td>770</td>
+                    <td>740</td>
+                    <td><a href="buy.html">Buy</a></td>
+                </tr>
+                <tr>
+                    <td class="product-info">
+                        <img src="{% static 'assets/img/perfume.jpg' %}" alt="Perfume">
+                        <span>Perfume</span>
+                    </td>
+                    <td>1200</td>
+                    <td>1250</td>
+                    <td>1180</td>
+                    <td><a href="buy.html">Buy</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

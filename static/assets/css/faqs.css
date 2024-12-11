@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+header {
+    background-color: #388e3c; /* Medium Green */
+    padding: 1em 2rem; /* Space around header content */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and navbar */
+    align-items: center; /* Vertically center logo and navbar */
+}
+
+/* Logo Styling */
+header .logo {
+    font-size: 2rem; /* Larger text for the logo */
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between navigation items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* White color for text */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: #d4edda; /* Light green on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and navbar vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar {
+        margin-top: 1rem; /* Add margin on top of navbar */
+    }
+}
+
+/* FAQ Page Specific Styles */
+.faq-container {
+    padding: 2em;
+    text-align: center;
+    background-color: white;
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+    color: #008000;
+    margin-bottom: 1em;
+}
+
+.faq-container p {
+    margin-bottom: 2em;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.faq-question {
+    background-color: #388e3c;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.faq-question:hover {
+    background-color: #215c2d;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1em;
+    background-color: #aeb6bf;
+    border-left: 4px solid #007bff;
+    margin-top: 0.5em;
+    border-radius: 0 0 5px 5px;
+}
+
+.faq-answer.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 1em;
+    }
+}

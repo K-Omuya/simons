@@ -1,0 +1,79 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{% static 'assets/css/services.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>services</title>
+</head>
+<body>
+
+
+<!-- Header -->
+<header>
+    <div class="logo">ShopWithSimon</div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'faq' %}">FAQs</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'cart' %}">Cart</a></li>
+            <li><a href="{% url 'track' %}">Track Orders</a></li>
+            <li><a href="{% url 'categories' %}">Categories</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-container">
+            <h1>Our Services</h1>
+            <p>
+                At ShopWithSimon, we aim to make your shopping experience seamless, efficient, and rewarding. Explore the wide range of services we offer.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <h2>Price Comparison</h2>
+                    <p>Compare prices from multiple e-commerce platforms to find the best deals for your desired products.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Shopping Cart</h2>
+                    <p>Easily manage your selected items with a user-friendly shopping cart interface.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Order Tracking</h2>
+                    <p>Track the status of your orders and stay informed about delivery updates.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Commodity Categories</h2>
+                    <p>Search and browse products across various categories like electronics, fashion, groceries, and more.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Blog & Tips</h2>
+                    <p>Stay updated with the latest shopping trends, product reviews, and expert buying tips.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Customer Support</h2>
+                    <p>Our dedicated team is here to assist you with any queries or concerns, 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ShopWithSimon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
